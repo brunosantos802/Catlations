@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "$(fortune)"
+/usr/games/fortune | sed 's/$/<br>/'

@@ -32,7 +32,7 @@
 			<!-- QUOTE -->
                     	<table cellpadding="0" cellspacing="0" border="0" width="1500">
                         	<tr><td align="center">
-                            		<h2>
+                            		<h2 style="white-space: pre-line;">
                             		<?php echo shell_exec('bash ../scripts/get_quote.sh'); ?>
                             		</h2>
                         	</td></tr>
