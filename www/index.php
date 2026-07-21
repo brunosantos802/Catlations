@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="icon" type="image/png" href="./image/favicon.png"/>
 		<title>Website title</title>
 	</head>
 	<body bgcolor="#008080" text="white">
@@ -13,7 +14,12 @@
 
 		<table cellpadding="0" cellspacing="0" border="0" width="100%">
 			<tr><td align="center">
-				<?php echo '<img src=./tenor.gif>'?>
+				<!-- <?php echo '<img src=./image/archer.gif>'?> -->
+				<!-- $image = "<?php echo shell_exec('echo "$(python3 rand_img.py)"'); ?>" -->
+				<?php
+					$image = trim(shell_exec('python3 ../script/rand_img.py'));
+					 echo "<img src=\"./image/$image\">";
+				?>
 			</td></tr>
 		</table>
 
@@ -28,7 +34,7 @@
 		</table>
 
 		<h3><center> STRING 1</center></h3>
-		<h3><center>STRING 2</center></h3>
+		<p><center>STRING 2</center></p>
 
 	</body>
 
