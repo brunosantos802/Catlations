@@ -6,19 +6,7 @@
         	<title>Catlations</title>
     	</head>
 
-    		<body bgcolor="#008080" text="white" style="cursor: none; height: 100%; margin: 0;">
-
-		<!-- CURSOR -->
-        	<img id="cat-cursor" src="./cursor/cursor.png" style="position: fixed; pointer-events: none; z-index: 9999; transform: translate(-2px, -2px);">
-
-        	<script>
-                	const catCursor = document.getElementById('cat-cursor');
-
-                	window.addEventListener('mousemove', (e) => {
-                    		catCursor.style.left = e.clientX + 'px';
-                    		catCursor.style.top = e.clientY + 'px';
-                	});
-        	</script>
+    		<body bgcolor="#008080" text="white" style="cursor: url('./cursor/cursor.png'), auto; height: 100%; margin: 0;">
 
 		<!--HEADER -->
 	        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">

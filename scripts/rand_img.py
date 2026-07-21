@@ -3,11 +3,8 @@
 import random
 import os
 
-output = os.popen('ls ./image').read()
-
-img_list = output.splitlines()
+img_list = os.listdir('./image')
 
 index = random.randint(0, len(img_list)-1)
 
 print(img_list[index])
-
