@@ -2,6 +2,8 @@
 
 An early-internet-inspired website where cats bring you revelations in the form of random quotes.
 
+Example Available through tor network at: http://cats3rpl4vwzqldlpawwxoyssskx7daw5hk3ew7swtkyspy352qignqd.onion/
+
 ## Features
 
 - Table-based layout with a classic MS Windows 95 teal background (#008080).
