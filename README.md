@@ -5,7 +5,7 @@ An early-internet-inspired website where cats bring you revelations in the form 
 ## Features
 
 - Table-based layout with a classic MS Windows 95 teal background (#008080).
-- Custom cat cursor script.
+- Custom cat cursor.
 - Dynamic random cat image selection via Python.
 - Dynamic random quote generation via fortune-mod.
 
@@ -28,11 +28,24 @@ To run this website locally, you need:
 2. Python 3
 3. The 'fortune' or 'fortune-mod' utility installed on your operating system.
 
-### Installing fortune
+### Installation Instructions
 
-- Debian/Ubuntu: `sudo apt install fortune-mod`
-- Arch Linux: `sudo pacman -S fortune-mod`
-- macOS: `brew install fortune`
+#### Debian/Ubuntu
+```bash
+sudo apt update
+sudo apt install php-cli python3 fortune-mod
+```
+
+#### Arch Linux
+```bash
+sudo pacman -Syu
+sudo pacman -S php python fortune-mod
+```
+
+#### macOS (using Homebrew)
+```bash
+brew install php python fortune
+```
 
 ## Running Locally
 
