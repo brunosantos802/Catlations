@@ -4,9 +4,20 @@
 		<link rel="icon" type="image/png" href="./image/favicon.png"/>
 		<title>Website title</title>
 	</head>
-	<body bgcolor="#008080" text="white">
+	<body bgcolor="#008080" text="white" style="cursor: none;">
+
+		<img id="cat-cursor" src="./cursor/cursor.png" style="position: fixed; pointer-events: none; z-index: 9999;">
 
 		<!-- <p> <font color="red"><marquee> TEXT </marquee></font></p> -->
+
+		<script>
+    			const catCursor = document.getElementById('cat-cursor');
+
+    			window.addEventListener('mousemove', (e) => {
+			        catCursor.style.left = e.clientX + 'px';
+        			catCursor.style.top = e.clientY + 'px';
+    			});
+		</script>
 
 		<center><h1>HEADER</h1></center>
 
