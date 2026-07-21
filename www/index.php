@@ -2,7 +2,7 @@
 <html lang="en" style="height: 100%;">
 
 	<head>
-        	<link rel="icon" type="image/png" href="./image/favicon.png"/>
+        	<link rel="icon" type="image/png" href="./favicon/favicon.png"/>
         	<title>Catlations</title>
     	</head>
 
