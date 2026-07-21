@@ -1,58 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
+
 	<head>
-		<link rel="icon" type="image/png" href="./image/favicon.png"/>
-		<title>Website title</title>
-	</head>
-	<body bgcolor="#008080" text="white" style="cursor: none;">
+        	<link rel="icon" type="image/png" href="./image/favicon.png"/>
+        	<title>Catlations</title>
+    	</head>
 
-		<img id="cat-cursor" src="./cursor/cursor.png" style="position: fixed; pointer-events: none; z-index: 9999;">
+    		<body bgcolor="#008080" text="white" style="cursor: none; height: 100%; margin: 0;">
 
-		<!-- <p> <font color="red"><marquee> TEXT </marquee></font></p> -->
+		<!-- CURSOR -->
+        	<img id="cat-cursor" src="./cursor/cursor.png" style="position: fixed; pointer-events: none; z-index: 9999; transform: translate(-2px, -2px);">
 
-		<script>
-    			const catCursor = document.getElementById('cat-cursor');
+        	<script>
+                	const catCursor = document.getElementById('cat-cursor');
 
-    			window.addEventListener('mousemove', (e) => {
-			        catCursor.style.left = e.clientX + 'px';
-        			catCursor.style.top = e.clientY + 'px';
-    			});
-		</script>
+                	window.addEventListener('mousemove', (e) => {
+                    		catCursor.style.left = e.clientX + 'px';
+                    		catCursor.style.top = e.clientY + 'px';
+                	});
+        	</script>
 
-		<center><h1>HEADER</h1></center>
+		<!--HEADER -->
+	        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+	        	<tr height="100%">
+                	<td align="center" valign="top">
+                    	<br>
+                    	<h1 style="font-size: 50px">THE BOOK OF CATLATIONS</h1>
 
-		<br></br>
+                    	<br>
 
-		<table cellpadding="0" cellspacing="0" border="0" width="100%">
-			<tr><td align="center">
-				<!-- <?php echo '<img src=./image/archer.gif>'?> -->
-				<!-- $image = "<?php echo shell_exec('echo "$(python3 rand_img.py)"'); ?>" -->
-				<?php
-					$image = trim(shell_exec('python3 ../script/rand_img.py'));
-					 echo "<img src=\"./image/$image\">";
-				?>
-			</td></tr>
-		</table>
+			<!-- CAT IMAGE -->
+                    	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        	<tr><td align="center">
+                            	<?php
+                                	$image = trim(shell_exec('python3 ../scripts/rand_img.py'));
+                               		echo "<img src=\"./image/$image\">";
+                            	?>
+                        	</td></tr>
+                    	</table>
 
-		<br></br>
+                    	<br>
 
-		<table cellpadding="0" cellspacing="0" border="0" width="100%">
-                        <tr><td align="center">
-			<h3>
-			<?php echo shell_exec('bash ../script/fortune_teller.sh'); ?>
-			<h3>
-                        </td></tr>
-		</table>
+			<!-- QUOTE -->
+                    	<table cellpadding="0" cellspacing="0" border="0" width="1500">
+                        	<tr><td align="center">
+                            		<h2>
+                            		<?php echo shell_exec('bash ../scripts/get_quote.sh'); ?>
+                            		</h2>
+                        	</td></tr>
+                    	</table>
+			</td>
+            		</tr>
 
-		<h3><center> STRING 1</center></h3>
-		<p><center>STRING 2</center></p>
+			<!-- EXTRA STUFF HERE -->
+                	<tr>
+                    	<td align="center">
+                        	<h3>____________________________________________________________<h3>
+				<h4>No Cats Were Harmed In The Making Of This Webpage</h4>
+			</td>
+                	</tr>
+
+			<!-- FOOTER -->
+			<tr>
+                	<td align="center" valign="bottom">
+                    	<footer>
+                        	<small>
+                            		<p>Powered by fortune-mod</p>
+                            		<a href="https://github.com/shlomif/fortune-mod/tree/master" target="_blank">Visit Their Official Repo!</a>
+                        	</small>
+                    	</footer>
+                    	<br>
+                	</td>
+            	</tr>
+        	</table>
 
 	</body>
-
-	<footer>
-		<small><center>
-    		<p>Powered by fortune-mod</p>
-		<a href="https://github.com/shlomif/fortune-mod/tree/master" target="_blank">Visit Their Official Repo!</a>
-		</center></small>
-	</footer>
 </html>
